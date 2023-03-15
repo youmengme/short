@@ -146,13 +146,10 @@ const Login: React.FC = () => {
   return (
     <div className={containerClassName}>
       <Helmet>
-        <title>
-          {intl.formatMessage({
+          <title>{ `${intl.formatMessage({
             id: 'menu.login',
             defaultMessage: '登录页',
-          })}
-          - {Settings.title}
-        </title>
+          })} - ${Settings.title}` }</title>
       </Helmet>
       <Lang />
       <div
